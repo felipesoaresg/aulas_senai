@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*foto ariana*/
+.container{
+    max-width: 1024px;
+    margin: 40px auto;
+}
+
+.card-container{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card-container img{
+    width: 300px;
+}
+
+.card-texto{
+    background-color: rgba(255, 0, 149, 0.295);
+    color: white;
+    font-weight: 400;
+    width: 300px;
+    height: 100%;
+    padding: 24px;
+    position: absolute;
+    top: 100%;
+    transition: 5s;
+}
+
+.card-container:hover .card-texto{
+    top: 0;
+    transition: 5s;
+}
+
+.card-texto div{
+    display: flex;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Tela de Cadastro</h1>
+    </header>
+
+    <form action="" class="formulario">
+        <h3>Dados do Cadastro</h3>
+<!--         <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="forms">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="dupla_form">
+                <div class="forms">
+                    <label for="nasc">Nascimento</label>
+                    <input type="date" id="nasc" name="nasc">
+                </div>
+                <div class="forms">
+                    <label for="tel">Contato</label>
+                    <input type="tel" id="tel" name="tel" placeholder="(xx) xxxxx-xxxx">
+                </div>
+            </div>
+
+            <div class="forms">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+        </fieldset> -->
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <div class="forms">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+
+            <div class="forms">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="dupla_form">
+                <div class="forms">
+                    <label for="num">Número</label>
+                    <input type="text" id="num" name="num">
+                </div>
+                <div class="forms">
+                    <label for="compl">Complemento</label>
+                    <input type="text" id="compl" name="compl">
+                </div>
+            </div>
+
+            <div class="forms">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+
+            <div class="dupla_form">
+                <div class="forms">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div class="forms">
+                    <label for="uf">UF</label>
+                    <select name="uf" id="uf">
+                        <option value="0">Selecione um Estado</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="BA">Bahia</option>
+                        <option value="GO">Goias</option>
+                        <option value="AM">Amazonas</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="botao">
+            <input type="submit" id="btn_submit" value="Enviar Formulário">
+        </div>
+    </form>
+
+    <footer class="rodape">
+        <p>Desenvolvido <span>© Felipe Soares</span></p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
