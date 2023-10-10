@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+
+    <title>IMC</title>
+</head>
+<body>
+    <h1>imc</h1>
+
+    <table class="tabela" id="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>imc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>Felipe</td>
+            <td>70</td>
+            <td>1.70</td>
+            <td>20</td>
+        </tbody>
+    </table>
+
+    <form class="form" id="formulario">
+        <div class="texto">
+            <label for="inputNome">Nome</label>
+            <input type="text" value="" id="inputNome">
+        </div>
+        <div class="texto">
+            <label for="inputPeso">Peso</label>
+            <input type="text" value="" id="inputPeso">
+        </div>
+        <div class="texto">
+            <label for="inputAltura">Altura</label>
+            <input type="text" value="" id="inputAltura">
+        </div>
+
+        <input type="submit" placeholder="enviar" id="btn_enviar">
+    </form>
+
+    <script src="script/tabela_imc.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    background-color: rgba(9, 172, 172, 0.651);
+    color: white;
+    text-align: center;
+    padding: 1em;  /*1em corresponde 16px*/
+    box-shadow: .25em .25em .5em rgba(0, 0, 0, .3);
+    margin-bottom: 7.5em; /*igual a 120px*/
+}
+
+.tabela{
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tabela thead{
+    background-color: rgba(9, 172, 172, 0.651);
+    color: white;
+}
+
+.tabela th:first-child{
+    border-top-left-radius: 1em;
+}
+
+.tabela th:last-child{
+    border-top-right-radius: 1em;
+}
+.tabela th{
+    padding: 1em;
+    font-size: 1.25em; /*igual a 20px*/
+}
+
+.tabela td{
+    border: 2px solid  rgba(9, 172, 172, 0.651);
+    padding: .5em;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#intervalo{
+    background-color: rgba(9, 172, 172, 0.685);
+}
+
+.tabela tbody tr:nth-child(odd){
+    background-color: rgba(9, 172, 172, 0.212);
+}
+
+.tabela tfoot{
+    background-color: rgba(9, 172, 172, 0.651);
+    color: white;
+    font-weight: 600;
+}
+
+.tabela tfoot td{
+    border-radius: 0 0 1em 1em;
+    border: none;
+}
+
+.tabela tbody tr td:first-child{
+    color: rgb(0, 128, 128);
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/ex3_formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Exemplo - Formulário</title>
+</head>
+<body>
+    <h1>Exemplo 3 - Formulários</h1>
+
+    <form action="arquivo.php" method="get" class="formulario" >
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="campo">            
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            </div>
+
+            <div class="campo_dupla">
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" minlength="2" maxlength="10">
+                </div>
+                <div class="campo">
+                    <label for="mail">E-mail:</label>
+                    <input type="email" name="email" id="mail">
+                </div>
+            </div>
+            
+            <div class="campo_dupla">
+                <div class="campo">
+                    <label for="filhos">Filhos:</label>
+                    <input type="number" name="qtdfilhos" id="filhos" min="0" max="20">
+                </div>
+                <div class="campo">
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" name="date" min="2023-08-24" max="2050-08-24">
+                </div>
+            </div>
+
+                <p>Gênero</p>
+            <div class="campo_dupla">
+                <div class="campo_dupla">
+                    <div class="campo">
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="genero" id="fem" value="f">
+                    </div>
+                    <div class="campo">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="genero" id="masc" value="m">
+                    </div>
+                    <div class="campo">
+                        <label for="outros">Outros</label>
+                        <input type="radio" name="genero" id="outros" value="x">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="estado">Estados</label>
+                    <select name="uf" id="estado">
+                        <option value="0">Selecione um Estado</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="ba">Bahia</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de Interesse</legend>
+
+            <div class="campo_dupla">
+                <div class="campo">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="html" name="html" value="html">
+                </div>
+                <div class="campo">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="css" name="css" value="css">
+                </div>
+                <div class="campo">
+                    <label for="js">JavaScript</label>
+                    <input type="checkbox" id="js" name="js" value="js">
+                </div>
+                <div class="campo">
+                    <label for="react">React</label>
+                    <input type="checkbox" id="react" name="react" value="react">
+                </div>
+                <div class="campo">
+                    <label for="ux">UX/UI</label>
+                    <input type="checkbox" id="ux" name="ux" value="ux">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagens e Sugestões</legend>
+
+            <div class="campo_dupla">
+                <div class="campo">
+                    <label for="msg">Deixe sua Mensagem</label>
+                    <textarea name="mensagem" id="msg" cols="50" rows="5"></textarea>
+                </div>
+                <div class="campo">
+                    <label for="add">Termo de Adesão</label>
+                    <textarea name="termo" id="add" cols="50" rows="5" readonly>Texto do termo de adesão que deve ser aceito.</textarea>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="aceite">Li e Aceito</label>
+                <input type="checkbox" id="aceite" required>
+            </div>
+        </fieldset>
+
+        <div class="campo_dupla">
+            <input type="submit" id="btn_submit" value="ok">
+            <input type="reset" id="btn_reset" value="limpar">
+        </div>
+        
+    </form>
+
+    
+</body>
+</html>

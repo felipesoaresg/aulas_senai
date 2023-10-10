@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+:root{
+    --azulescuro: #053B50;
+    --azul: #176B87;
+    --azulclaro: #64CCC5;
+    --branco: #eeee;
+    --verdeagua: #45FFCA;
+    --azulclarinho: #97FFF4;
+    --azulmaisclaro: #337CCF;
+    --roxo: #614BC3;
+    --laranja: #F94C10;
+}
+
+h1{
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1em;
+    text-align: center;
+    box-shadow: .25em .25em .25em rgba(0, 0, 0, 0.25);
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container{
+    background-color: var(--azulclaro);
+    padding: 2em;
+    display: grid;
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'navegacao conteudo'
+    'rodape rodape';
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px 600px 150px;
+    color: var(--branco);
+}
+
+.cabecalho{
+    background-color: var(--azulescuro);
+    padding: 2em;
+    grid-area: cabecalho;
+}
+
+.navegacao{
+    background-color: var(--azul);
+    padding: 2em;
+    grid-area: navegacao;
+}
+
+.conteudo{
+    background-color: var(--azulmaisclaro);
+    padding: 2em;
+    grid-area: conteudo;
+    display: grid;
+    grid-template-areas: 
+        'artigo1 artigo2'
+        'artigo3 artigo4';
+    gap: 1.5em;
+    color: var(--azulescuro);
+}
+
+.conteudo article{
+    background-color: var(--verdeagua);
+    padding: 1em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.rodape{
+    background-color: var(--roxo);
+    padding: 2em;
+    grid-area: rodape;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        grid-template-areas: 
+        'cabecalho'
+        'navegacao'
+        'conteudo'
+        'rodape';
+
+        grid-template-rows: 100px 75px 600px 150px;
+        grid-template-columns: 100%;
+    }
+
+    .conteudo{
+        grid-template-areas: 
+        'artigo1'
+        'artigo2'
+        'artigo3'
+        'artigo4';
+    }
+
+}
+
+/* .container{
+    border: 2px solid var(--azulescuro);
+    background-color: var(--azulclaro);
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 150px 50vh 75px;
+    gap: 1em;
+    margin-bottom: 10em;
+}
+
+.container div{
+    border: 2px solid var(--azulescuro);
+    background-color: var(--branco);
+    padding: 2em;
+} */

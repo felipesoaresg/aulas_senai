@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --amarelo: #FFCE1C;
+    --branco: #ffff;
+    --padding: 1em;
+    --laranja: #FCB44E;
+    --width: 1440px;
+}
+
+/*cabecalho*/
+.cabecalho{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.cabecalho .numero{
+    padding: var(--padding);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho .login{
+    padding: var(--padding);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cabecalho .bi-headset{
+    color: var(--amarelo);
+    font-size: 100%;
+    margin-right: 10px;
+}
+.cabecalho .bi-person-circle{
+    color: var(--amarelo);
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+.cabecalho img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+/*busca*/
+.busca{
+    padding: 1.5em;
+    background-color: var(--amarelo);
+    display: flex;
+}
+
+.busca input[type=text]{
+    border-radius: 10px;
+    border: none;
+    padding: .5em;
+    margin-right: 10px;
+}
+
+.busca .bi-search{
+    color: var(--branco);
+    margin-right: auto;
+}
+
+.busca .bi-cart-fill{
+    color: var(--branco);
+}
+.busca p{
+    color: var(--branco);
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+/*navegacao*/
+.navegacao{
+    text-align: center;
+    padding: var(--padding);
+    background-color: black;
+    margin: auto;
+    margin-bottom: 3em;
+}
+.navegacao ul{
+    margin: auto;
+    list-style: none;
+}
+
+.navegacao li{
+    display: inline-block;
+}
+
+.navegacao a{
+    color: var(--branco);
+    text-decoration: none;
+    margin: 100px;
+}
+
+/* principal */
+.principal{
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    gap: 1.53em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50vh;
+    grid-template-areas: 
+    'primeiro segundo segundo';
+    margin-bottom: 20px;
+}
+
+.principal .primeiro{
+    grid-area: primeiro;
+    background-image: url(../img/volta_aulas.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.principal .segundo{
+    grid-area: segundo;
+    background-image: url(../img/escritorio.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.primeiro h2{
+    padding: .6em;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.primeiro p{
+    padding: 0 .5em;
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50%;
+    font-size: 100%;
+}
+
+.primeiro input[type=submit]{
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    padding: var(--padding);
+    background-color: var(--laranja);
+    color: var(--branco);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.288);
+}
+
+.segundo .inputs{
+    text-align: left;
+    padding: var(--padding); 
+}
+.segundo h2{
+    padding: .6em .6em;
+    margin: auto;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.segundo p{
+    padding: 0 1em;
+    margin: auto;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 1%;
+    font-size: 100%;
+}
+
+.segundo input[type=submit]{
+    width: 35%;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    border: none;
+    padding: var(--padding);
+    background-color: #FCB44E;
+    color: var(--branco);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.288);
+}
+
+.containers{
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    gap: 1.53em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh;
+    grid-template-areas: 
+    'container1 container2 container3';
+    margin-bottom: 5em;
+}
+
+.containers .container1{
+    border-radius: 25px;
+    background-color: black;
+    color: var(--branco);
+}
+
+.containers .container2{
+    border-radius: 25px;
+    background-color: black;
+    color: var(--branco);
+}
+
+.containers .container3{
+    border-radius: 25px;
+    background-color: black;
+    color: var(--branco);
+}
+
+.containers h2{
+    padding: var(--padding);
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    border-bottom: 2px solid var(--laranja);
+    display: inline-block;
+}
+
+.containers p{
+    text-align: center;
+}
+
+/* itens */
+.itens{
+    margin-bottom: 9em;
+}
+
+.itens h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.itens h4{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.itens p{
+    text-align: left;
+}
+.itens .produtos{
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    gap: 1.53em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh;
+    grid-template-areas: 
+    'item1 item2 item3 item4 item5 item6';
+    margin-bottom: 4em;
+}
+
+.itens img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+/* categoria */
+.compre_categoria .categorias{
+    text-align: center;
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    gap: 1.53em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh;
+    grid-template-areas: 
+    'cat1 cat2 cat3 cat4'
+    'cat5 cat6 cat7 cat8';
+    margin-bottom: 6em;
+}
+
+.compre_categoria h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.compre_categoria .categorias h3{
+    padding: 70px 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.categorias .cat1{
+    grid-area: cat1;
+    background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.151)), url(../img/lampada.png);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.categorias .cat2{
+    grid-area: cat2;
+    background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.151)), url(../img/calculadora-preta-com-vista-superior-nas-maos-femininas-no-espaco-livre-da-mesa-preta.webp);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    color: var(--branco);
+}
+
+.categorias .cat3{
+    grid-area: cat3;
+    background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.151)), url(../img/1343742-caderno-preto-aberto-isolado-no-fundo-amarelo-gratis-foto.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.categorias .cat4{
+    grid-area: cat4;
+    background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.151)), url(../img/limpeza.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    color: var(--branco);
+}
+
+.categorias .cat5{
+    grid-area: cat5;
+    background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.151)), url(../img/11023936-copo-de-papel-eco-preto-copo-de-papel-de-cafe-em-fundo-amarelo-maquete-para-o-seu-anuncio-copie-o-espaco-foto.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.categorias .cat6{
+    grid-area: cat6;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.151)), url(../img/mobiliario.png);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    color: var(--branco);
+}
+
+.categorias .cat7{
+    grid-area: cat7;
+    background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.151)), url(../img/caneta.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.categorias .cat8{
+    grid-area: cat8;
+    background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.151)), url(../img/iphone.webp);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    color: var(--branco);
+}
+
+/* artigos */
+.artigos{
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    gap: 1.53em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh;
+    grid-template-areas: 
+    'artigo1 artigo2';
+    margin-bottom: 2em;
+}
+
+.artigos .artigo1{
+    background-image: url(../img/lapispretty.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.artigos h4{
+    color: var(--branco);
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size:27px;
+    white-space: normal;
+}
+
+.artigo1 p{
+    color: var(--branco);
+    text-align: left;
+    padding: var(--padding);
+    font-weight: 300;
+    font-size: 1.1em;
+    text-decoration: double;
+    margin-bottom: .5em;
+    white-space: normal;
+}
+
+.artigo2 p{
+    color: var(--branco);
+    text-align: left;
+    padding: var(--padding);
+    font-weight: 300;
+    font-size: 1em;
+    white-space: normal;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.artigo1 input[type=submit]{
+    width: 35%;
+    margin-left: 20px;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    border: none;
+    padding: var(--padding);
+    background-color: var(--laranja);
+    color: var(--branco);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.288);
+    font-size: 100%;
+}
+
+.artigos .artigo2{
+    background-image: url(../img/reguaamarela.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.artigo2 input[type=submit]{
+    width: 35%;
+    margin-left: 20px;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    border: none;
+    padding: var(--padding);
+    background-color: var(--laranja);
+    color: var(--branco);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.288);
+    font-size: 100%;
+}
+
+/* app */
+.app{
+    max-width: var(--width);
+    margin: auto;
+    background-color: #f9d96a;
+    display: flex;
+}
+
+.app .texto{
+    padding: 15px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.texto p{
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: .9em;
+}
+
+.texto input[type=submit]{
+    width: 25%;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    border: none;
+    padding: var(--padding);
+    background-color: black;
+    color: var(--branco);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.288);
+    font-size: 100%;
+}
+
+/* clube */
+.clube{
+    text-align: center;
+    max-width: var(--width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh;
+    grid-template-areas: 
+    'clube1 clube2';
+}
+
+.clube1{
+    grid-area: clube1;
+    background-color: black;
+    color: var(--branco);
+}
+
+
+.clube2{
+    grid-area: clube2;
+    background-color: rgba(128, 128, 128, 0.233);
+}
+
+.clube1 h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: var(--padding);
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.clube1 p{
+    padding: var(--padding);
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.clube2 h2{
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--laranja);
+    margin-bottom: 1em;
+}
+
+.clube2 span{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.inputs2 input{
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #28293e;
+}
+
+.inputs2 input[type=text]{
+    width: 50%;
+    background: white;
+    outline: none;
+}
+
+.inputs2 input[type=submit]{
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.425);
+    color: black;
+}
+
+.quadrado{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    color: var(--branco);
+    width: 350px;
+    height: 200px;
+    background-color: black;
+}
+
+/* rodape */
+.rodape{
+    background-color: black;
+    color: var(--branco);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape h3{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.rodape .bi-paypal{
+    font-size: 3vh;
+}

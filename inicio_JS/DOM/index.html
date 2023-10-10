@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos JS aplicado ao DOM</title>
+    <style>
+        .div_altera_classe{
+            border: 2px solid black;
+            background-color: darkmagenta;
+            width: 400px;
+            height: 200px;
+            margin-bottom: 2em;
+        }
+        .div_nova_classe{
+            background-color: orange;
+        }
+        button{
+            cursor: pointer;
+            padding: 8px;
+            margin-bottom: 2em;
+        }
+        hr{
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo1">Este é o texto original</h1>
+    
+    <hr>
+    <p class="paragrafo">Parágrafo 1</p>
+    <p class="paragrafo">Parágrafo 2</p>
+    <p class="paragrafo">Parágrafo 3</p>
+    <p class="paragrafo">Parágrafo 4</p>
+    <hr>
+
+    <div class="div_altera_classe" id="div_muda"></div>
+    <button id="btn_altera_classe">Muda Classe</button>
+    <hr>
+
+    <ol class="lista_acrescenta">
+
+    </ol>
+    <input type="text" id="conteudo_linha">
+    <button id="btn_add_linha">Nova Linha</button>
+    <hr>
+
+    <ul class="lista_remove">
+        <li class="linha_remove">Linha 1</li>
+        <li class="linha_remove">Linha 2</li>
+        <li class="linha_remove">Linha 3</li>
+        <li class="linha_remove">Linha 4</li>
+        <li class="linha_remove">Linha 5</li>
+    </ul>
+    <hr>
+
+    <ol class="lista_filtro">
+        <li class="linhas_filtro">JavaScript</li>
+        <li class="linhas_filtro">Java</li>
+        <li class="linhas_filtro">CSS</li>
+        <li class="linhas_filtro">HTML</li>
+        <li class="linhas_filtro">Node</li>
+        <li class="linhas_filtro">Bootstrap</li>
+        <li class="linhas_filtro">SQL</li>
+    </ol>
+    <input type="text" id="input_filtra" placeholder="filtrar">
+    <hr>
+
+    
+
+    <script src="alteraConteudos.js"></script>
+    <script src="mudaEstilo.js"></script>
+    <script src="mudaClasse.js"></script>
+    <script src="add_linha.js"></script>
+    <script src="removeLinha.js"></script>
+    <script src="filtraLista.js"></script>
+</body>
+</html>

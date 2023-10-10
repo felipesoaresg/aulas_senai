@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cinzaClaro: #f2f2f2;
+    --cinzaEscuro: #4d4d4d;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho{
+    background-color: var(--cinzaClaro);
+    color: var(--cinzaEscuro);
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho h2{
+    font-weight: 600;
+}
+
+.cabecalho input{
+    display: none;
+}
+
+.bi{
+    font-size: 32px;
+}
+
+.bi-moon-fill{
+    display: none;
+}
+
+/* div */
+.card{
+    background-color: rgba(224, 224, 224, 0.774);
+    max-width: 50%;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card_img{
+    padding: 32px 24px;
+    width: 50%;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_img h3{
+    font-size: 68px;
+    font-weight: 500;
+}
+
+.card_img img{
+    width: 450px;
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    transform: rotate(-10deg);
+}
+
+.segundaImg{
+    display: none;
+}
+
+.card_texto{
+    padding: 32px;
+    width: 50%;
+}
+
+.card_texto h4{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 8px;
+}
+
+.card_texto span{
+    color: var(--cinzaEscuro);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.preco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.preco span{
+    font-size: 32px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.preco button{
+    background-color: var(--cinzaEscuro);
+    color: var(--cinzaClaro);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* MODO ESCURO */
+
+.escuro{
+    background-color: var(--cinzaEscuro);
+    color: var(--cinzaClaro);
+}
+
+.escuro .card{
+    background-color: gray;
+}
+
+.escuro .cabecalho{
+    background-color: black;
+    color: var(--cinzaClaro);
+}
+
+.escuro span{
+    color: var(--cinzaClaro);
+}
+
+.escuro button{
+    background-color: black;
+}
+
+.escuro .bi-brightness-high-fill{
+    display: none;
+}
+
+.escuro .bi-moon-fill{
+    display: block;
+}
+
+.escuro .card_img .primeiraImg{
+    display: none;
+}
+
+.escuro .segundaImg{
+    display: block;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    transform: rotate(-10deg);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/ex4_tabelas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Exemplo 4 - Tabelas</title>
+</head>
+<body>
+    <h1>Exemplo 4 - Tabelas</h1>
+
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>07:30</td>
+                <td>UX-UI</td>
+                <td rowspan="2">JavaScript</td>
+                <td>Node JS</td>
+                <td>UX-UI</td>
+                <td rowspan="2">Bootstrap</td>
+            </tr>
+
+            <tr>
+                <td>08:30</td>
+                <td>HTML5</td>
+                <td>UX-UI</td>
+                <td>HTML5</td>
+            </tr>
+
+            <tr id="intervalo">
+                <td>09:30</td>
+                <td colspan="5">Intervalo</td>
+            </tr>
+
+            <tr>
+                <td>09:45</td>
+                <td>HTML5</td>
+                <td>HTML5</td>
+                <td rowspan="2">CSS</td>
+                <td>Node Js</td>
+                <td>HTML5</td>
+            </tr>
+
+            <tr>
+                <td>10:45</td>
+                <td>CSS</td>
+                <td>React</td>
+                <td>React</td>
+                <td>CSS</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">Horário Escola Front-End</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

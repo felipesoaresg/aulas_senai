@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: radial-gradient(at 0 0, #fff8ce, #ffb61d);
+    overflow: hidden;
+}
+
+@keyframes movimenta{
+    from{
+        transform: translate(0 0);
+    }
+    to{
+        transform: translate(-20px, -20px);
+    }
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+}
+
+#container header{
+    padding: 50px 0;
+}
+
+.principal{
+    display: flex;
+    gap: 32px;
+}
+
+.principal .textos, .principal .animacao{
+    width: 50%;
+}
+
+.textos h1{
+    margin: 55px 0;
+    font-size: 66px;
+}
+
+.textos h1 strong{
+    color: brown;
+    text-transform: uppercase;
+}
+
+.textos p{
+    font-weight: 300;
+}
+
+.textos p:nth-child(3){
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.inputs input{
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #28293e;
+}
+
+.inputs input[type=text]{
+    background: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.inputs input[type=submit]{
+    background-color: #031d4a;
+    color: white;
+}
+
+.animacao{
+    position: relative;
+}
+
+.animacao img{
+    position: absolute;
+}
+
+.animacao img:nth-child(1){
+    top: 150px;
+    left: -60px;
+    transform: rotate(-20deg);
+    animation: movimenta 2s ease-in-out infinite alternate-reverse;
+}
+
+.animacao img:nth-child(2){
+    left: 350px;
+    transform: rotate(15deg);
+    animation: movimenta 2s ease-in-out infinite alternate-reverse;
+}
+
+.animacao img:nth-child(3){
+    animation: movimenta 2s ease-in-out infinite reverse;
+}
+
+.animacao img:nth-child(4){
+    top: 350px;
+    left: 50px;
+    transform: rotate(-20deg);
+    animation: movimenta 2s ease-in-out infinite alternate;
+}
+
+.animacao img:nth-child(5){
+    top: -100px;
+    left: 100px;
+    transform: rotate(-20deg);
+    animation: movimenta 2s ease-in-out infinite alternate-reverse;
+}
+
+.animacao img:nth-child(6){
+    top: 280px;
+    left: 420px;
+    transform: rotate(-15deg);
+    animation: movimenta 2s ease-in-out infinite alternate;
+}
